@@ -1,0 +1,192 @@
+/* Roboto 400, 700, 500 Raleway 700
+цвета #FFFFFF, #E5E5E5, #F5F4FA, #2F303A, 
+текст #2196F3, #757575
+фон кнопки #2196F3 */
+
+:root { 
+    --opp-color:#FFFFFF;
+    --сurrent-color: #2196F3;
+    --alt-color:#757575;
+    --another-opp-color:#E5E5E5; 
+    
+}   
+
+.container{
+    width: 1200px; 
+    padding: 0 15px;
+    border: 1px solid red; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+li {
+    list-style-type: none;
+} 
+
+/* Header */
+
+.header {
+    position: relative; 
+
+}
+
+.header-nav {
+    background-color:var(--opp-color);
+}
+
+.header-nav, 
+.contacts-list, 
+.links-list,
+.header-flex
+{
+    display: flex;
+}
+
+.header-logo {
+    color: #000;
+    font-family: "Raleway", 'Verdana', 'Tahoma', sans-serif;
+    font-weight: 700;
+}
+
+.contacts-list {
+    margin: 0;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.header-flex {
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+}
+
+.links-list > li, 
+.contacts-list > li {
+    margin-left: 50px;
+}
+
+.main-page {
+    color:#212121;
+    font-family: "Roboto", 'Verdana', 'Tahoma', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+
+.link{
+    color:#212121;
+    
+} 
+
+.link:hover, .link:focus {
+    color:var(--сurrent-color);
+} 
+
+.current {
+    color:var(--сurrent-color);
+}
+.hero{
+    font-family: "Roboto", 'Verdana', 'Tahoma', sans-serif;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color:var(--opp-color);
+    background-color: #2F303A; /*временно для того, чтобы была видна строка */
+}
+.hero-link {
+color:var(--opp-color);
+background-color: var(--сurrent-color);
+font-size: 16px;
+line-height: 1.88;
+}
+
+.hero-text {
+    text-transform:uppercase;
+}
+.middle-section {
+    background-color: var(--another-opp-color);
+}
+
+.title{
+  line-height: 1.17;
+  font-weight: 700;
+}
+.text{
+  line-height: 1.71;
+  font-weight: 400;
+  color:var(--alt-color);
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+}
+
+.bottom-title {
+    --bottom-color: #F5F4FA;   
+    background-color: var(--bottom-color); 
+}
+
+.name-title {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.section-text{
+    color: var(--alt-color);
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.footer{
+    --footer-colour: #2F303A; 
+    background-color: var(--footer-colour);
+    font-weight: 400;
+    color:var(--opp-color);
+}
+.footer-text {
+    color:var(--opp-color); 
+}
+
+.footer-logo {
+  color:var(--opp-color);
+  font-family: "Raleway", 'Verdana', 'Tahoma', sans-serif;
+  font-weight: 700;
+}
+
+.portfolio-page {
+    color:#212121;
+    font-family: "Roboto", 'Verdana', 'Tahoma', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.63;
+}
+
+.portfolio-top{
+    font-weight: 500;
+    background-color: var(--another-opp-color); 
+}
+
+.invisible {
+    color:transparent; 
+}
+.portfolio:hover, .link:focus {
+    color:#FFFFFF;
+    background-color: var(--сurrent-color);
+    } 
+
+.portfolio-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+    }
+    
+.portfolio-text {
+        font-weight: 700;
+        line-height: 1.88;
+        color:var(--alt-color);
+        }
