@@ -15,18 +15,18 @@
         <nav class="header-nav">
           <a href="#" class="header-logo"><span class="current">Web</span>Studio</a>
           <ul class="links-list">
-            <li><a href="" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="#" class="link">Контакты</a></li>
+            <li class="link-item"><a href="" class="link current">Студия</a></li>
+            <li class="link-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="link-item"><a href="#" class="link">Контакты</a></li>
           </ul> 
         </nav>          
         
         <ul class="contacts-list">
-               <li>
+               <li class="contact-item">
                   <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
                 </li>
                 
-                <li>
+                <li class="contact-item" >
                     <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
                 </li>
         </ul>  
@@ -36,67 +36,80 @@
 
     <main>
         <section class="hero">
-          <div class="container"> 
-            <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
+          <div class="container hero-container"> 
+            <h1 class="hero-text">Эффективные решения <br> для вашего бизнеса</h1>
             <a href="#" class="hero-link">Заказать услугу</a>
           </div>
         </section>
 
         <section class="middle-section">
           <div class="container">
-              <ul>
-                  <li>
+              <ul class="column-items">
+                  <li class="column-item">
                       <h2 class="title">Внимание к деталям</h2>
                       <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                   </li>
-                  <li>
+                  <li class="column-item">
                       <h2 class="title">Пунктуальность</h2>
                       <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                   </li>
-                  <li>
+                  <li class="column-item">
                       <h2 class="title">Планирование</h2>
                       <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                   </li>
-                  <li>
+                  <li class="column-item">
                       <h2 class="title">Современные технологии</h2>
                       <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                   </li>
               </ul>
+
               <section>
                   <h2 class="section-title">Чем мы занимаемся</h2>
-                  <ul>
-                      <li> <img src="./images/img_1.jpg" width="270" alt="Алгоритмы"> </li>
-                      <li> <img src="./images//img_2.jpg" width="270" alt="Мобильная разработка"> </li>
-                      <li> <img src="./images//img_3.jpg" width="270" alt="Дизайн"> </li>
+                  <ul class="gallery">
+                      <li> <img src="./images/img_1.jpg" alt="Алгоритмы"> </li>
+                      <li> <img src="./images//img_2.jpg" alt="Мобильная разработка"> </li>
+                      <li> <img src="./images//img_3.jpg" alt="Дизайн"> </li>
                   </ul>
               </section>           
           </div>
         </section>
 
-        <section class="bottom-title">
+        <section class="bottom-section">
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
-                <ul>
+                <ul class="bottom-cardset">
                         <li>
                             <img src="./images//img_1_1.jpg"   width="270" alt="Product Designer" title="Product Designer">
-                            <h3  class="name-title">Игорь Демьяненко</h3>
-                            <p lang="en" class="section-text">Product Designer</p>
+                            <div class="cardset-data"> 
+                                <h3  class="name-title">Игорь Демьяненко</h3>
+                                <p lang="en" class="section-text">Product Designer</p>
+                            </div>
                         </li>
+
                         <li>
                             <img src="./images//img_1_2.jpg"   width="270" alt="Frontend Developer" title="Frontend Developer">
-                            <h3  class="name-title">Ольга Репина</h3>
-                            <p lang="en" class="section-text">Frontend Developer</p>
+                            <div class="cardset-data"> 
+                                <h3  class="name-title">Ольга Репина</h3>
+                                <p lang="en" class="section-text">Frontend Developer</p>
+                            </div>
                         </li>    
+
                         <li>
                             <img src="./images//img_1_3.jpg"  width="270" alt="Marketing" title="Marketing">
-                            <h3  class="name-title">Николай Тарасов</h3>
-                            <p lang="en" class="section-text">Marketing</p>
+                            <div class="cardset-data"> 
+                                <h3  class="name-title">Николай Тарасов</h3>
+                                <p lang="en" class="section-text">Marketing</p>
+                            </div>                            
                         </li>
+
                         <li>
                             <img src="./images//img_1_4.jpg"  width="270" alt="UI Designer" title="UI Designer">
-                            <h3 class="name-title">Михаил Ермаков</h3>
-                            <p lang="en" class="text">UI Designer</p>
+                            <div class="cardset-data">
+                                <h3 class="name-title">Михаил Ермаков</h3>
+                                <p lang="en" class="section-text">UI Designer</p> 
+                            </div>                            
                         </li>
+
                 </ul>
             </div>
         </section>
@@ -104,11 +117,11 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer-container">
         <a href="#" class="footer-logo"><span class="current">Web</span>Studio</a>
-        <address >
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul>
+        <address class="footer-address">
+            <p >г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-contacts">
                 <li>
                     <a href="tel:+380961111111" class="footer-text">+38 096 111 11 11</a>
                 </li>

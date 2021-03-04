@@ -13,8 +13,8 @@
 
 .container{
     width: 1200px; 
-    padding: 0 15px;
-    border: 1px solid red; 
+    padding: 94px 15px;
+    outline: 1px solid red; 
     margin-right: auto;
     margin-left: auto;
 }
@@ -23,7 +23,12 @@ li {
     list-style-type: none;
 } 
 
-/* Header */
+ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin:  0;
+    padding: 0; 
+}
+
+/* HEADER */
 
 .header {
     position: relative; 
@@ -46,26 +51,36 @@ li {
     color: #000;
     font-family: "Raleway", 'Verdana', 'Tahoma', sans-serif;
     font-weight: 700;
-}
+    letter-spacing: 0.03em;
 
-.contacts-list {
-    margin: 0;
-}
-
-ul, li, h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
+    margin-right: 93px; 
 }
 
 .header-flex {
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
+    padding: 0px 15px;
 }
 
 .links-list > li, 
 .contacts-list > li {
-    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: 0.02em;
 }
+
+.links-list, 
+.contacts-list {
+    margin-left: 50px; 
+}
+
+
+.link-item:last-child, 
+.contact-item:last-child {
+    margin-right:0px; 
+}
+
+/* MAIN-PAGE   */
 
 .main-page {
     color:#212121;
@@ -73,8 +88,8 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.17;
-}
 
+}
 
 .link{
     color:#212121;
@@ -88,11 +103,12 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 .current {
     color:var(--сurrent-color);
 }
+
+/* HERO  */
+
 .hero{
     font-family: "Roboto", 'Verdana', 'Tahoma', sans-serif;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     color:var(--opp-color);
     background-color: #2F303A; /*временно для того, чтобы была видна строка */
 }
@@ -101,14 +117,53 @@ color:var(--opp-color);
 background-color: var(--сurrent-color);
 font-size: 16px;
 line-height: 1.88;
+
+
+display: inline-block;
+padding: 10px 32px; 
+border: 0px;
+border-radius: 4px;
+margin: 30px auto ;
 }
 
 .hero-text {
     text-transform:uppercase;
+    display: block;
+    text-align: center;
+    font-size: 44px;
+    line-height: 1.36;
 }
+
+.hero-container {
+
+    padding: 200px 252px; 
+    letter-spacing: 0.06em;
+    text-align: center;
+      
+}
+
+/* MIDDLE-FIRST-PART  */
+
 .middle-section {
     background-color: var(--another-opp-color);
 }
+
+.column-items {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 95px; 
+
+}
+
+.column-items > li {
+    margin-right:30px;
+    flex-basis: calc((100%-4*30));
+}
+
+.column-item:last-child{
+    margin-right:0px;
+}
+
 
 .title{
   line-height: 1.17;
@@ -120,33 +175,81 @@ line-height: 1.88;
   color:var(--alt-color);
 }
 
+/* MIDDLE-SECOND-PART  */
+
 .section-title {
     font-size: 36px;
     line-height: 1.17;
     font-weight: 700;
+    text-align: center;
 }
 
-.bottom-title {
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: calc (100%-3*370);
+
+  margin-right: -30px;
+  margin-top: 50px;
+}
+
+.gallery li {
+  margin-right: 30px;
+}
+
+/* BOTTOM-SECTION  */
+
+.bottom-section {
     --bottom-color: #F5F4FA;   
     background-color: var(--bottom-color); 
+}
+
+.bottom-cardset { 
+ display: flex;
+ justify-content: space-between;
+ flex-basis: calc (100%-4*270);
+
+ margin-right: -30px;
+ margin-top: 50px;
+
+}
+
+.cardset-data {
+    margin-top: 30px; 
+
+}
+
+
+.bottom-cardset > li {
+    margin-right:30px; 
 }
 
 .name-title {
   font-size: 16px;
   line-height: 1.19;
+
+  text-align: center;
 }
 
 .section-text{
     color: var(--alt-color);
     font-size: 16px;
     line-height: 1.19;
+
+    margin-top: 10px; 
+    text-align: center;
 }
+
+/* FOOTER  */
 
 .footer{
     --footer-colour: #2F303A; 
     background-color: var(--footer-colour);
     font-weight: 400;
     color:var(--opp-color);
+}
+.footer-container{
+    padding: 60px 15px;
 }
 .footer-text {
     color:var(--opp-color); 
@@ -157,6 +260,16 @@ line-height: 1.88;
   font-family: "Raleway", 'Verdana', 'Tahoma', sans-serif;
   font-weight: 700;
 }
+
+.footer-contacts {
+  margin-top: 9px;
+}
+
+.footer-address{
+    margin-top: 20px;
+  }
+
+/* PORTFOLIO  */
 
 .portfolio-page {
     color:#212121;
