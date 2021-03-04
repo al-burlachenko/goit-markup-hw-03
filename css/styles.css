@@ -364,7 +364,7 @@ margin: 30px auto ;
 }
 
 .cards img {
-    width:370px; 
+    max-width:370px; 
 }
 
 .item {
