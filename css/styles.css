@@ -7,7 +7,7 @@
   --opp-color: #ffffff;
   --сurrent-color: #2196f3;
   --alt-color: #757575;
-  --another-opp-color: #e5e5e5;
+  /* --another-opp-color: #e5e5e5; */
   --button-fill-color: #f5f4fa;
 }
 
@@ -53,7 +53,7 @@ img {
 }
 
 .section:nth-child(n + 2) {
-  background-color: var(--another-opp-color);
+  background-color: var(--opp-color);
 }
 
 .section:nth-child(n + 3) {
@@ -65,10 +65,10 @@ img {
 
 .header {
   position: relative;
+  background-color: var(--opp-color);
 }
 
 .header-nav {
-  background-color: var(--opp-color);
 }
 
 .header-nav,
@@ -312,7 +312,7 @@ img {
 
 .portfolio-top {
   font-weight: 500;
-  background-color: var(--another-opp-color);
+  background-color: var(--opp-color);
 }
 
 .invisible {
